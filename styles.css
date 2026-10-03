@@ -295,6 +295,8 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .project-link:hover { color: var(--text); }
 
 /* Artworks */
+.exhibition { max-width: 640px; margin-bottom: 40px; }
+.exhibition .sub-heading { margin-top: 0; }
 .section-inner.wide { max-width: 1400px; }
 
 .artworks {
