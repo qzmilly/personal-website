@@ -325,7 +325,7 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .artwork {
   --cm: clamp(4px, min(1.25vh, 0.7vw), 14px);
   --w: calc(var(--wcm) * var(--cm));
-  --fw: min(100%, max(var(--w), 260px));
+  --fw: min(100%, max(var(--w), 180px));
   width: var(--fw);
   margin: var(--gap) 0 0 calc((100% - var(--fw)) * var(--k));
 }
