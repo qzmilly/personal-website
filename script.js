@@ -11,7 +11,7 @@ mainNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
-document.querySelectorAll('.gallery-item img, .lightbox-img').forEach((img) => {
+document.querySelectorAll('.artwork img, .lightbox-img').forEach((img) => {
   img.addEventListener('contextmenu', (e) => e.preventDefault());
   img.addEventListener('dragstart', (e) => e.preventDefault());
 });
@@ -22,7 +22,7 @@ if (lightbox) {
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxClose = document.getElementById('lightboxClose');
 
-  document.querySelectorAll('.gallery-item img').forEach((img) => {
+  document.querySelectorAll('.artwork img').forEach((img) => {
     img.addEventListener('click', () => {
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;
