@@ -43,3 +43,20 @@ if (lightbox) {
     if (e.key === 'Escape') closeLightbox();
   });
 }
+
+const artworks = document.querySelectorAll('.artwork');
+if (artworks.length) {
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    artworks.forEach((a) => io.observe(a));
+  } else {
+    artworks.forEach((a) => a.classList.add('is-visible'));
+  }
+}

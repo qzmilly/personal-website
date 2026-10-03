@@ -332,6 +332,21 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 
 .art-col .artwork:first-child { margin-top: 0; }
 
+.js .artwork {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.js .artwork.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .artwork { opacity: 1; transform: none; transition: none; }
+}
+
 .artwork img {
   display: block;
   width: min(100%, var(--w));
