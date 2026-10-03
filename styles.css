@@ -298,6 +298,7 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .exhibition { max-width: 640px; margin-bottom: 140px; }
 .exhibition .sub-heading { margin-top: 0; }
 .section-inner.wide { max-width: 1400px; }
+.art-head { max-width: 960px; margin: 0 auto; }
 
 .artworks {
   display: grid;
