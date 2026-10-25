@@ -478,5 +478,5 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
   .art-col { display: contents; }
   .art-col:nth-child(n) { padding-top: 0; }
   .artwork { order: var(--i); --cm: clamp(4px, 1.1vh, 14px); margin-top: calc(var(--gap) * 0.6) !important; }
-  .artwork[style*="--i: 1;"] { margin-top: 0 !important; }
+  .art-col:nth-child(2) .artwork:first-child { margin-top: 0 !important; }
 }
